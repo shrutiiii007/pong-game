@@ -57,10 +57,19 @@
         </div>
     </div>
 
-    <div id="gameOverScreen" class="game-over-screen">
-        <h2 id="gameOverMessage"></h2>
-        <button id="playAgainButton">Play Again</button>
-    </div>
+<div id="gameOverScreen" class="game-over-screen">
+    <h2 id="gameOverMessage"></h2>
+    <button id="playAgainButton">Play Again</button>
+    <button id="playAgainButton" style="
+      margin: 10px;
+      "
+    onclick="
+        // Hide game over screen
+        document.getElementById('gameOverScreen').style.display = 'none';
+        // Show welcome screen
+        document.getElementById('welcomeScreen').style.display = 'flex';
+    ">Home</button>
+</div>
 
     <div id="mainGameContainer" class="main-game-container">
         <h1>Pong Game</h1>
